@@ -1,0 +1,29 @@
+go north
+brushTeeth
+take mouthwash
+showerYourself
+conditionHair
+go east
+returnRoom
+wearClothes
+go south
+eatPancakes 2
+go east
+sayNotes showthelove
+go east
+useMachine
+take ticket
+useMachine
+go south
+sitSeat
+use mouthwash
+go east
+petDuck
+fixTrain
+go north
+use mouthwash
+take money
+go north
+scanID
+petDuck
+run
