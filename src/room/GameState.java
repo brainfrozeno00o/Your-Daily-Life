@@ -1,6 +1,8 @@
 package room;
 
-public class GameState{
+import java.io.*;
+
+public class GameState implements Serializable{
 
 	public static final int brushing_teeth = 1;
 	public static final int showered = 2;
@@ -18,12 +20,15 @@ public class GameState{
 	public static final int train_fixed = 8192;
 	public static final int got_money = 16384;
 	public static final int ignored_foam = 32768;
-	public static final int dead = 65536;
+	public static final int scanned_ID = 65536;
+	public static final int dead = 131072;
 	private int state = 0;
 
 	public boolean is(int constant){return ((state & constant) == constant);}
 
 	public void set(int constant){state = state | constant;}
+
+	public void setPreviousState(int prev){state = prev;}
 
 	public int getState(){return state;}
 }

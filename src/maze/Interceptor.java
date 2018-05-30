@@ -2,7 +2,7 @@ package maze;
 
 import room.GameState;
 
-public class Interceptor {
+public class Interceptor{
 
 	public static boolean canEnter(GameState state, Class<?> clazz){
 		boolean ifPossible = false;
